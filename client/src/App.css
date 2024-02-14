@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App{
   width: 100vw;
   height: 100vh;
@@ -7,23 +11,26 @@ body{
   margin: 0;
   padding: 0;
 }
-.Sidebar {
+.Display {
   height: 100%;
-  width:250px;
+  width:100%;
   background-color: black;
   color: white;
+  border: 1px black solid;
+  display: flex;
 }
-.SidebarList {
+.Sidebar {
   height: auto;
   padding: 0;
-  width: 100%;
+  width: 250px;
+  background-color: rgb(41, 39, 39);
 
 }
-.SidebarList .row {
+.Sidebar .row {
   width: 100%;
   height: 70px;
-  background-color: rgb(53, 53, 53);
-  border: 1px solid black;
+  background-color: rgb(87, 87, 87);
+  border: 1px solid rgb(0, 0, 0);
   list-style-type: none;
   margin: 0%;
   display: flex;
@@ -34,22 +41,37 @@ body{
 
 
 }
-.SidebarList .row:hover {
+.Sidebar .row:hover {
   cursor: pointer;
   background-color: rgb(139, 139, 139);
 }
-.SidebarList #active {
+.Sidebar #active {
   background-color: rgb(139, 139, 139);
 }
 .row #icon {
   flex: 30%;
   display: grid;
   place-items:center;
+  color:white
 }
 .row #title {
   flex: 70%;
+  color:white;
+  text-decoration: none;
 }
+.Content{
+ width: 100%;
+  padding: 10px;
+}
+.Home-PG{
+  background-color: black;
+  color: white;
 
+  
+}
+.playlist-PG{
+  color: black;
+}
 
 /* 
 @keyframes logo-spin {
