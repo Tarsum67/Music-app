@@ -9,6 +9,8 @@
 .App{
   width: 100vw;
   height: 100vh;
+  background-color: black;
+  display: flex;
    
 }
 body{
@@ -16,23 +18,39 @@ body{
   padding: 0;
 }
 .Display {
-  height: 100%;
+  height: auto;
   width:100%;
   background-color: black;
   color: white;
   border: 1px black solid;
   display: flex;
 
-  background: linear-gradient(to top,rgb(0, 0, 0),rgb(0, 11, 85));
+
+}
+.mainBox{
+  height: auto;
+  width:100%;
+  background-color: rgb(44, 43, 46);
+  color: white;
+  border: 1px black solid;
+  display: flex;
+  margin: 5px;
+  border-radius: 13px;
+  background: linear-gradient(to left bottom, #383a38, #000000);
+  background: linear-gradient(to right top, #383a38, #000000);
 }
 .Sidebar {
   height: auto;
   padding: 0;
   width: 300px;
   background-color: rgb(41, 39, 39);
-  background: linear-gradient(to right, #383a38, #000000);
-  border-radius: 10px;
-
+  background: linear-gradient(to left, #383a38, #000000);
+  border-radius: 13px;
+  margin: 5px;
+  
+}
+.sideBarContent{
+  margin-top: 1vh;
 }
 
 .Sidebar .row {
@@ -49,8 +67,9 @@ body{
   border-radius: 10px;
   padding: 1px;
   margin: 1px;
-  margin-left: 2%;
 
+  
+  
  
 }
 .Sidebar .row:hover {
@@ -72,7 +91,6 @@ body{
 
 .row #title {
   flex: 70%;
-  
  
 
 }
@@ -81,12 +99,19 @@ body{
   padding: 10px;
 }
 .Home-PG{
-   color: white;
-
+  color: white;
+width: 100%;
   
 }
 .Home-PG h1 {
   font-family:head;
+  font-size:x-large;
+  border-bottom: 1px solid white;
+  width: 96%;
+  margin: 1%;
+  padding: 1px;
+  height: 8vh;
+ margin-left: 2%;
 }
 .playlist-PG{
   color: rgb(255, 255, 255);
