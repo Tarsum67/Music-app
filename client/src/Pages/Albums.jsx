@@ -1,13 +1,12 @@
-import React from 'react'
-import '../App.css'
+import React from "react";
+import "../App.css";
 
 function Albums() {
   return (
     <>
-    
-    <div>Albums</div>
+      <div>Albums</div>
     </>
-  )
+  );
 }
 
-export default Albums
+export default Albums;

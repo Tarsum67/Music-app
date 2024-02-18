@@ -1,3 +1,7 @@
+@font-face{
+  font-family: Head;
+  src:url(../Fonts/Graph.otf);
+}
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +9,8 @@
 .App{
   width: 100vw;
   height: 100vh;
+  background-color: black;
+  display: flex;
    
 }
 body{
@@ -12,65 +18,103 @@ body{
   padding: 0;
 }
 .Display {
-  height: 100%;
+  height: auto;
   width:100%;
   background-color: black;
   color: white;
   border: 1px black solid;
   display: flex;
+
+
+}
+.mainBox{
+  height: auto;
+  width:100%;
+  background-color: rgb(44, 43, 46);
+  color: white;
+  border: 1px black solid;
+  display: flex;
+  margin: 5px;
+  border-radius: 13px;
+  background: linear-gradient(to left bottom, #383a38, #000000);
+  background: linear-gradient(to right top, #383a38, #000000);
 }
 .Sidebar {
   height: auto;
   padding: 0;
-  width: 250px;
+  width: 300px;
   background-color: rgb(41, 39, 39);
-
+  background: linear-gradient(to left, #383a38, #000000);
+  border-radius: 13px;
+  margin: 5px;
+  
 }
+.sideBarContent{
+  margin-top: 1vh;
+}
+
 .Sidebar .row {
-  width: 100%;
+  width: 95%;
   height: 70px;
-  background-color: rgb(87, 87, 87);
-  border: 1px solid rgb(0, 0, 0);
   list-style-type: none;
   margin: 0%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: cursive;
+  /* font-family: cursive; */
+  font-family: Head;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 1px;
 
-
+  
+  
+ 
 }
 .Sidebar .row:hover {
   cursor: pointer;
-  background-color: rgb(139, 139, 139);
+  color: black ; 
+  background-color: rgb(155, 155, 155);
 }
 .Sidebar #active {
-  background-color: rgb(139, 139, 139);
+  color: rgb(0, 0, 0) ;
+  background-color: rgb(155, 155, 155);
 }
 .row #icon {
   flex: 30%;
   display: grid;
   place-items:center;
-  color:white
+  
+  text-decoration: none;
 }
+
 .row #title {
   flex: 70%;
-  color:white;
-  text-decoration: none;
+ 
+
 }
 .Content{
  width: 100%;
   padding: 10px;
 }
 .Home-PG{
-  background-color: black;
   color: white;
-
+width: 100%;
   
 }
+.Home-PG h1 {
+  font-family:head;
+  font-size:x-large;
+  border-bottom: 1px solid white;
+  width: 96%;
+  margin: 1%;
+  padding: 1px;
+  height: 8vh;
+ margin-left: 2%;
+}
 .playlist-PG{
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 /* 
