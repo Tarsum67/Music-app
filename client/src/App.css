@@ -3,8 +3,8 @@
   src:url(../Fonts/Graph.otf);
 }
 *{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 .App{
   width: 100vw;
@@ -14,17 +14,17 @@
    
 }
 body{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+  background-color: #000000;
 }
+
 .Display {
-  height: auto;
-  width:100%;
+  height:auto;
   background-color: black;
   color: white;
-  border: 1px black solid;
   display: flex;
-
+margin: 3px;
 
 }
 .mainBox{
@@ -32,13 +32,35 @@ body{
   width:100%;
   background-color: rgb(44, 43, 46);
   color: white;
-  border: 1px black solid;
+
   display: flex;
-  margin: 5px;
+  margin: 3px;
   border-radius: 13px;
   background: linear-gradient(to left bottom, #383a38, #000000);
   background: linear-gradient(to right top, #383a38, #000000);
 }
+.navBar{
+  width: 100%;
+  display: flex;
+  height: 7vh;
+  position: fixed;
+  top:0;
+  /* background-color: #000000; */
+  justify-content: center;
+}
+.navBarContent{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page{
+display: flex;
+width: 100%;
+height: auto;
+margin-top: 7vh;
+}
+
 .Sidebar {
   height: auto;
   padding: 0;
@@ -46,33 +68,17 @@ body{
   background-color: rgb(41, 39, 39);
   background: linear-gradient(to left, #383a38, #000000);
   border-radius: 13px;
-  margin: 5px;
+  margin: 2px;
+  /* position: fixed;
+  left: 0; */
   
 }
 .sideBarContent{
   margin-top: 1vh;
 }
 
-.Sidebar .row {
-  width: 95%;
-  height: 70px;
-  list-style-type: none;
-  margin: 0%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* font-family: cursive; */
-  font-family: Head;
-  border-radius: 10px;
-  padding: 1px;
-  margin: 1px;
 
-  
-  
- 
-}
-.Sidebar .row:hover {
+.Sidebar .sideBarRow .linkRow:hover {
   cursor: pointer;
   color: black ; 
   background-color: rgb(155, 155, 155);
@@ -81,33 +87,52 @@ body{
   color: rgb(0, 0, 0) ;
   background-color: rgb(155, 155, 155);
 }
-.row #icon {
-  flex: 30%;
-  display: grid;
-  place-items:center;
+.sideBarRow{
+  justify-content: center;
+}
+
+.linkRow{
+  width: 95%;
+  height: 70px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
   
-  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-family: Head;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 1px;
+  color: white;
+}
+.linkRow #active{
+  color: rgb(0, 0, 0) ;
+  background-color: rgb(155, 155, 155);
+}
+.sideBarRow #icon {
+  display: grid;
+ flex:20%;
+ justify-content: right;
+ margin: 5%;
 }
 
-.row #title {
-  flex: 70%;
- 
+.sideBarRow #title {
+  justify-content: center;
+  flex:50%
+  
+}
 
-}
-.Content{
- width: 100%;
-  padding: 10px;
-}
 .Home-PG{
   color: white;
-width: 100%;
-  
+  /* width: 100%; */
+  /* display: flex; */
 }
 .Home-PG h1 {
   font-family:head;
   font-size:x-large;
   border-bottom: 1px solid white;
-  width: 96%;
+  /* width: 96%; */
   margin: 1%;
   padding: 1px;
   height: 8vh;
@@ -115,6 +140,10 @@ width: 100%;
 }
 .playlist-PG{
   color: rgb(255, 255, 255);
+}
+.card{
+  display: flex;
+  
 }
 
 /* 
