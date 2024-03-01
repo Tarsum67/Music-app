@@ -39,7 +39,7 @@ function Sidebar() {
       <ul className="Sidebar">
         <div className="sideBarContent">
           {sidebarData.map((val, key) => (
-            <li key={key} className="row">
+            <li key={key} className="sideBarRow">
               <NavLink to={val.link} className="linkRow"exact="true" onClick={() => handleLinkClick(val.link)}>
                 <div id="icon">{val.icon}</div>
                 <div id="title">{val.title}</div>

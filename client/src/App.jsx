@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Sidebar from "./components/sidebar.jsx";
 import Home from "./Pages/Home.jsx";
 import Artists from "./Pages/Artist.jsx";
@@ -8,12 +9,7 @@ import Albums from "./Pages/Albums.jsx";
 import Downloads from "./Pages/Downloads.jsx";
 import Songs from "./Pages/Song.jsx";
 import NavBar from "./components/NavBar.jsx";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (

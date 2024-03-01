@@ -3,8 +3,8 @@
   src:url(../Fonts/Graph.otf);
 }
 *{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 .App{
   width: 100vw;
@@ -14,8 +14,8 @@
    
 }
 body{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   background-color: #000000;
 }
 
@@ -60,9 +60,7 @@ width: 100%;
 height: auto;
 margin-top: 7vh;
 }
-.sideBarBox{
- height: auto;
-}
+
 .Sidebar {
   height: auto;
   padding: 0;
@@ -80,7 +78,7 @@ margin-top: 7vh;
 }
 
 
-.Sidebar .row .linkRow:hover {
+.Sidebar .sideBarRow .linkRow:hover {
   cursor: pointer;
   color: black ; 
   background-color: rgb(155, 155, 155);
@@ -89,7 +87,7 @@ margin-top: 7vh;
   color: rgb(0, 0, 0) ;
   background-color: rgb(155, 155, 155);
 }
-.row{
+.sideBarRow{
   justify-content: center;
 }
 
@@ -112,32 +110,29 @@ margin-top: 7vh;
   color: rgb(0, 0, 0) ;
   background-color: rgb(155, 155, 155);
 }
-.row #icon {
+.sideBarRow #icon {
   display: grid;
  flex:20%;
  justify-content: right;
  margin: 5%;
 }
 
-.row #title {
+.sideBarRow #title {
   justify-content: center;
   flex:50%
   
 }
-.Content{
- width: 100%;
-  padding: 10px;
-}
+
 .Home-PG{
   color: white;
-width: 100%;
-  
+  /* width: 100%; */
+  /* display: flex; */
 }
 .Home-PG h1 {
   font-family:head;
   font-size:x-large;
   border-bottom: 1px solid white;
-  width: 96%;
+  /* width: 96%; */
   margin: 1%;
   padding: 1px;
   height: 8vh;
@@ -145,6 +140,10 @@ width: 100%;
 }
 .playlist-PG{
   color: rgb(255, 255, 255);
+}
+.card{
+  display: flex;
+  
 }
 
 /* 
