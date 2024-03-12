@@ -58,7 +58,7 @@ margin: 3px;
 display: flex;
 width: 100%;
 height: auto;
-margin-top: 7vh;
+
 }
 
 .Sidebar {
@@ -143,6 +143,15 @@ margin-top: 7vh;
 }
 .card{
   display: flex;
+  
+}
+.SearchPage{
+  width: 100%;
+}
+.searchPageResults{
+  color:white;
+  display: grid;
+  grid-template-columns: max-content;
   
 }
 

@@ -8,7 +8,7 @@ import Playlists from "./Pages/Playlists.jsx";
 import Albums from "./Pages/Albums.jsx";
 import Downloads from "./Pages/Downloads.jsx";
 import Songs from "./Pages/Song.jsx";
-import NavBar from "./components/NavBar.jsx";
+import Search from "./Pages/Search.jsx"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Sidebar />
         <div className="mainBox">
           <div className="navBar">
-            <NavBar />
+            {/* <NavBar /> */}
           </div>
           <div className="page">
             <Routes>
@@ -28,6 +28,7 @@ function App() {
               <Route path="/Albums" element={<Albums />} />
               <Route path="/Songs" element={<Songs />} />
               <Route path="/Downloads" element={<Downloads />} />
+              <Route path="/Search" element={<Search/>}/>
             </Routes>
           </div>
         </div>
