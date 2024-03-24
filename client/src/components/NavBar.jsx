@@ -1,13 +1,14 @@
 import React from "react";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
-
+import SearchPage from "../Pages/SearchPage";
 const CLIENT_ID = "ad4f30885d2b424ab684cb462dc2b0f4";
 const CLIENT_SECRET = "84b0f6da04d74eed803be9ec3d04110c";
 export default function NavBar() {
   const [searchInput, setSearchInput] = useState("");
   const [accessToken, setAccessToken] = useState("");
-  const [album, setalbums] = useState([]);
+  const [albums, setAlbums] = useState([]);
+  
   useEffect(() => {
     //Api Access Token
     var authParameters = {
@@ -57,7 +58,10 @@ export default function NavBar() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setAlbums(data.items);
+        setAlbums(data.items.map(album => ({
+          name: album.name,
+          imageSrc: album.images[0].url
+        })));
       });
     //Display Search
   }
@@ -76,6 +80,7 @@ export default function NavBar() {
         />
         <Button onClick={search}>Search</Button>
       </InputGroup>
+     
     </div>
   );
 }
