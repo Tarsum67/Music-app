@@ -39,26 +39,29 @@ margin: 3px;
   background: linear-gradient(to left bottom, #383a38, #000000);
   background: linear-gradient(to right top, #383a38, #000000);
 }
-.navBar{
+
+.searchNavBar{
   width: 100%;
   display: flex;
-  height: 7vh;
-  position: fixed;
-  top:0;
-  /* background-color: #000000; */
-  justify-content: center;
-}
-.navBarContent{
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
-.page{
-display: flex;
-width: 100%;
-height: auto;
+.searchCards{
+border: none !important;
 
+  
+}
+.searchCardsBody{
+  padding: 0 !important;
+}
+
+.searchCardsImg{
+  max-height:300px !important;
+  max-width: 300px !important;
+  margin: 0;
+}
+.page{
+width: 100%;
 }
 
 .Sidebar {
@@ -147,34 +150,25 @@ height: auto;
 }
 .SearchPage{
   width: 100%;
+  height: 100%;
+  background: linear-gradient(to  top, #3e0606, #000000) !important;
+  border-radius: 13px;
 }
-.searchPageResults{
-  color:white;
-  display: grid;
-  grid-template-columns: max-content;
-  
+.searchBar {
+  border-color: black !important;
+  background:  linear-gradient(to  top, #450202, #000000) !important;
+  font-family: Head;
+  color: white !important;
 }
-
-/* 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchBar::placeholder{
+  color: white !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.searchBtn{
+  font-family: Head !important;
+ border: #000000 !important;
+ background: #0d3415 !important;
+ background:  linear-gradient(to  top, #1c4e1c, #000000) !important;
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-} */
+
